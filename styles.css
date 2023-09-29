@@ -79,8 +79,10 @@ nav ul li a.active {
 
 section {
     padding: 40px 20px;
-    max-width: 800px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .profile-pic {
@@ -93,13 +95,34 @@ section {
 }
 
 .img-responsive {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     margin: 20px 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.img-container {
+    flex: 1;
+    padding: 20px;
+    text-align: center; /* Centers the image horizontally */
+}
+
+.section-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* For even-numbered sections, swap the content and image positions */
+section:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 @media (max-width: 768px) {
@@ -116,5 +139,16 @@ section {
 @media (max-width: 600px) {
     .img-responsive {
         max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+
+    /* If you want to always show the image above the text on mobile, regardless of it being an even or even section */
+    section:nth-child(even) {
+        flex-direction: column;
     }
 }
