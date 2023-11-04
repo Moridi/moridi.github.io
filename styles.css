@@ -186,6 +186,23 @@ a:hover {
     text-decoration: underline;
 }
 
+.bold-text {
+    font-weight: bold;
+}
+
+.red-text {
+    color: #E74C3C;
+}
+
+.blue-text {
+    color: #3498DB;
+}
+
+.dark-text {
+    color: #2C3E50;
+}
+
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
