@@ -124,6 +124,85 @@ section:nth-child(even) {
     flex-direction: row-reverse;
 }
 
+.two-column-list {
+    column-count: 2;
+    padding: 0;
+    list-style-type: disc; /* You can change the bullet point style here */
+}
+
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+}
+li {
+    margin-bottom: 10px; /* Add some space between list items */
+}
+.university {
+    font-weight: bold;
+}
+.degree {
+    display: block;
+    margin-left: 15px;
+}
+.gpa {
+    display: block;
+    margin-left: 15px;
+    font-style: italic; /* Optional: style the GPA line differently */
+}
+
+.content {
+    width: 70%;
+    margin: auto;
+}
+.experience {
+    margin-bottom: 20px;
+}
+.experience h3 {
+    color: #2C3E50;
+    margin-bottom: 5px;
+}
+.role {
+    font-weight: bold;
+    color: #E74C3C;
+}
+.description {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.degree {
+    font-weight: bold;
+    color: #E74C3C;
+}
+.gpa {
+    color: #3498DB;
+}
+
+a {
+    color: #3498DB;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.red-text {
+    color: #E74C3C;
+}
+
+.blue-text {
+    color: #3498DB;
+}
+
+.dark-text {
+    color: #2C3E50;
+}
+
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
