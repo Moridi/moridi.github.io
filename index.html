@@ -120,6 +120,9 @@
       .card .card-body + .card-body {
         margin-top: -30px; /* Negative margin to pull elements closer together */
       }
+      code {
+        color: black; 
+      }
     </style>
   </head>
   <body id="top">
@@ -231,6 +234,8 @@
         <div class="section" id="experience">
           <div class="container cc-experience">
             <div class="h4 text-center mb-4 title">Experience</div>
+
+            <!-- Microsoft -->
             <div class="card">
               <div class="row">
                 <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
@@ -241,13 +246,18 @@
                 <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                   <div class="card-body">
                     <div class="h5">Software Engineer II</div>
-                    <p>Nov 2024 - Present | Microsoft | Vancouver, Canada</p>
-                    <p>AI Frameworks: Developing and optimizing software for large-scale AI model training and inference on the Microsoft AI accelerators using C/C++ and Python.</p>
-                    <p>Collaboration: Working closely with cross-functional teams, including hardware and ML, to create efficient AI solutions across diverse platforms.</p>
+                    <p>Nov 2024 - Present | Microsoft — AI Frameworks | Vancouver, Canada</p>
+                    <ul>
+                      <li>Optimize <strong>C++ LLM kernels</strong> and Python bindings for Microsoft AI accelerators (<strong>MAIA</strong>); improved <strong>inference throughput/latency</strong> in internal benchmarks.</li>
+                      <li>Implemented MAIA-specific kernels, delivering <strong>&sim;40%</strong> lower latency versus prior Triton implementations across targeted ops.</li>
+                      <li>Co-designed microbenchmarks, productionized changes with CI, and profiled end-to-end paths (kernels, runtime, I/O); reduced stalls via SIMD, tiling, cache-friendly layouts, and double buffering.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- Huawei -->
             <div class="card">
               <div class="row">
                 <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
@@ -257,14 +267,33 @@
                 </div>
                 <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                   <div class="card-body">
-                    <div class="h5">Senior Research Engineer B</div>
-                    <p>Sep 2023 - Nov 2024 | Huawei Technologies Canada Co., Ltd. | Vancouver, Canada</p>
-                    <p>AI/ML: Designed and implemented customized kernels for Ascend-NPU to optimize LLM inference on vLLM.</p>
-                    <p>Database: Contributed to research initiatives and early-stage engineering of an in-memory OLAP engine for cloud services.</p>
+                    <div class="h5">Senior Research Engineer</div>
+                    <p>Sep 2023 - Nov 2024 | Huawei Technologies Canada | Burnaby, Canada</p>
+
+                    <p><strong>LLM Inference (May 2024 - Nov 2024):</strong></p>
+                    <ul>
+                      <li>Co-developed Ascend NPU operators (<code>sgmv</code>, <code>bgmv</code>) to accelerate <strong>LoRA</strong> in <strong>vLLM</strong>; validated on multi-card nodes; subsequently <em>open-sourced by the team</em> under the vLLM Ascend repo.</li>
+                      <li>Achieved <strong>3-5x</strong> speedups over a BMM baseline across diverse LoRA distribution scenarios.</li>
+                      <li>Built latency/throughput regression tests and CI checks; profiled kernels and runtime to remove bottlenecks.</li>
+                    </ul>
+
+                    <p><strong>Database Systems (Sep 2023 - May 2024):</strong></p>
+                    <ul>
+                      <li>Led R&amp;D for an in-memory <strong>OLAP DB</strong>; designed and implemented asynchronous scan operators.</li>
+                      <li>Increased CPU utilization by <strong>20-40%</strong> on TPC-H queries via vectorized execution, cache-aware algorithms, and I/O overlap.</li>
+                    </ul>
+
+                    <p><strong>Open source:</strong> the Ascend kernels were released at
+                      <a href="https://github.com/vllm-project/vllm-ascend/tree/main/csrc/kernels" target="_blank" rel="noopener">
+                        vllm-project/vllm-ascend
+                      </a>, documenting how the NPU-specific <code>sgmv</code>/<code>bgmv</code> paths integrate with vLLM to speed up LoRA serving on Ascend hardware.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- University of Waterloo -->
             <div class="card">
               <div class="row">
                 <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
@@ -287,6 +316,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- Huawei Intern -->
             <div class="card">
               <div class="row">
                 <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
@@ -303,6 +334,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- University of Tehran roles -->
             <div class="card">
               <div class="row">
                 <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
@@ -317,13 +350,13 @@
                     <p>Assisted in more than 15 courses such as Advanced Programming and Operating Systems.</p>
                   </div>
                   <div class="card-body">
-                    <div class="h5">Undergraduate Research Assistant</div>
-                    <p>Oct 2019 - Feb 2021 | University of Tehran Science & Technology Park | Tehran, Iran</p>
+                    <div class="h5">Research Data Scientist</div>
+                    <p>Oct 2019 - Apr 2021 | University of Tehran Science &amp; Technology Park | Tehran, Iran</p>
                     <p>Analyzed social network behavior in the Ethereum network using graph analysis.</p>
                   </div>
                   <div class="card-body">
-                    <div class="h5">Machine Learning Intern</div>
-                    <p>Jul 2019 - Sep 2019 | University of Tehran Science & Technology Park | Tehran, Iran</p>
+                    <div class="h5">Research Data Science Intern</div>
+                    <p>Jul 2019 - Sep 2019 | University of Tehran Science &amp; Technology Park | Tehran, Iran</p>
                     <p>Participated in several Kaggle competitions and developed solutions using Scikit-Learn.</p>
                   </div>
                 </div>
