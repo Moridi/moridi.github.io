@@ -197,9 +197,15 @@
                 <div class="col-lg-6 col-md-12">
                   <div class="card-body">
                     <div class="h4 mt-0 title">About</div>
-                    <p>Hello! I am Mohammad Moridi, a Software Engineer at Microsoft in the AI Frameworks team, based in Vancouver, Canada. I specialize in cloud-based fault-tolerant systems, with expertise in C++ programming, multi-core environments, and working with CPU, GPU, and NPU architectures. In my role, I focus on designing and developing AI software in C/C++ and Python, collaborating across hardware and ML teams to optimize AI models for large-scale training and inference on Microsoft AI accelerators.</p>
-                    <p>I hold a MASc degree in Computer Software from the University of Waterloo, where I specialized in persistent memory platforms. Previously, at Huawei, I led database engine optimization initiatives and developed NPU-level operators for LoRA serving on vLLM. I am passionate about contributing to AI innovation and high standards of engineering within an inclusive, collaborative culture.</p>
-                    <p>I recently started tutoring on <a href="https://www.superprof.ca/microsoft-engineer-delivers-interview-prep-and-tutoring-algorithms-data-structures-python-with-live-coding-real-world.html">Superprof</a>, delivering one-on-one sessions in Algorithms, Data Structures &amp; Python with live coding and real-world examples.</p>
+                      <ul>
+                        <li><strong>Systems/AI engineer</strong> specializing in <strong>C++ kernels</strong> and <strong>LLM inference</strong> on NPU/GPU.</li>
+                        <li>At Microsoft (AI Frameworks, Vancouver): work on <strong>MAIA</strong> kernels and inference pipelines; build high-performance AI software in C/C++/Python; collaborate with HW/ML teams to optimize large-scale training/inference on Microsoft accelerators.</li>
+                        <li>Previously at Huawei: co-developed <code class="code-black">sgmv</code>/<code class="code-black">bgmv</code> LoRA operators for vLLM (Ascend) and led database-engine performance work.</li>
+                        <li><strong>Core skills:</strong> profiling-driven SIMD, tiling, memory-layout design, throughput tuning across kernels/runtime/I/O.</li>
+                        <li><strong>MASc</strong>, University of Waterloo (persistent memory).</li>
+                        <li><strong>Open source: </strong><a href="https://github.com/vllm-project/vllm-ascend/tree/main/csrc/kernels" target="_blank" rel="noopener">Ascend-vLLM LoRA kernels</a></li>
+                        <li><strong>Tutoring:</strong> <a href="https://www.superprof.ca/microsoft-engineer-delivers-interview-prep-and-tutoring-algorithms-data-structures-python-with-live-coding-real-world.html">Algorithms, Data Structures, C++, Python</a>.</li>
+                      </ul>
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
@@ -556,6 +562,51 @@
             </div>
           </div>
         </div>
+        <div class="section" id="open-source">
+          <div class="container">
+            <div class="h4 text-center mb-4 title">Open-Source Contributions</div>
+            <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <div class="card-body">
+                <!-- vLLM Ascend kernels -->
+                <h5>vLLM Ascend Kernels (<code>sgmv</code>, <code>bgmv</code>)</h5>
+                <p>Co-developed NPU-specific operators to accelerate LoRA serving on Ascend hardware and integrated them into vLLM's execution path. Validated on multi-card nodes and later <em>open-sourced by the team</em>.</p>
+                <p>
+                  <a href="https://github.com/vllm-project/vllm-ascend/tree/main/csrc/kernels" target="_blank" rel="noopener">
+                    github.com/vllm-project/vllm-ascend/tree/main/csrc/kernels
+                  </a>
+                </p>
+                <ul>
+                  <li>3-5x speedups over BMM baselines for diverse LoRA distribution scenarios.</li>
+                  <li>Latency/throughput regression tests and CI checks to prevent performance regressions.</li>
+                  <li>Documented NPU-specific integration for kernel, runtime, and I/O paths.</li>
+                </ul>
+                <hr>
+                <!-- UW research repos -->
+                <h5>Montage (UW) - Online Snapshotting</h5>
+                <p>Research code and experiments for online snapshotting used in persistent-memory work at the University of Waterloo.</p>
+                <p>
+                  <a href="https://gitlab.uwaterloo.ca/mmoridi/montage-uw/-/tree/online-snapshotting" target="_blank" rel="noopener">
+                    gitlab.uwaterloo.ca/mmoridi/montage-uw/-/tree/online-snapshotting
+                  </a>
+                </p>
+
+                <h5>UDSS (Unified Detectable Sequential Specification)</h5>
+                <p>Implementation supporting detectable objects / persistent-memory queue experiments with Prof. Golab's group.</p>
+                <p>
+                  <a href="https://git.uwaterloo.ca/wgolab/DSSQueue" target="_blank" rel="noopener">
+                    git.uwaterloo.ca/wgolab/DSSQueue
+                  </a>
+                </p>
+                <hr>
+                <!-- Context -->
+                <p class="mb-0">
+                  These contributions align with my current work on <strong>C++ kernels</strong>, <strong>LLM inference</strong>, and <strong>profiling-driven optimization</strong> (SIMD, tiling, cache-friendly layouts) across kernels, runtime, and I/O.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="section" id="certificates">
           <div class="container cc-certificates">
             <div class="h4 mb-4 text-center title">Certificates</div>
@@ -689,7 +740,7 @@
                           <p>Web 3 Researcher | PhD Candidate in Blockchain @UWaterloo</p>
                           <p>In today's fast-paced technology landscape, it's a rare privilege to work with professionals who excel not only in their core domain but also display an unparalleled passion for learning and innovation. Mohammad is one such gem.</p>
                           <p>Mohammad really knows his stuff when it comes to Persistent Memory. He doesn't just skim the surface; he gets deep into the details and always makes sure he's following the best guidelines. He has a knack for making complicated things about Persistent Memory clear and easy to understand. On top of that, his skills in C++ are amazing. Many of us, myself included, have learned a lot from him and appreciate how he makes tough topics simpler.</p>
-                          <p>Outside of these areas, Mohammad’s enthusiasm for blockchain technology sets him apart. Participating in multiple hackathons, he hasn’t just showcased his skills, but he's clinched victories. These achievements aren’t just a testament to his individual prowess, but they also speak volumes about his ability to collaborate, innovate, and lead teams towards a common goal.</p>
+                          <p>Outside of these areas, Mohammad's enthusiasm for blockchain technology sets him apart. Participating in multiple hackathons, he hasn't just showcased his skills, but he's clinched victories. These achievements aren't just a testament to his individual prowess, but they also speak volumes about his ability to collaborate, innovate, and lead teams towards a common goal.</p>
                           <p>In conclusion, having the pleasure to work alongside Mohammad has been one of the most enriching experiences of my professional journey. His blend of expertise, enthusiasm, and empathy makes him an invaluable asset to any team. I genuinely look forward to witnessing the continued trajectory of his success and breakthroughs in the future. Mohammad's potential knows no bounds, and his future is luminous.</p>
                         </div>
                       </div>
